@@ -1,13 +1,13 @@
 package br.escola;
 
 import br.escola.model.AlunoMenu;
-import br.escola.model.AtividadeMenu;
 import br.escola.model.GestaoMenu;
 import br.escola.util.PaginasMenu;
 
 import java.util.Scanner;
 
 import static br.escola.model.AtividadeMenu.listarAtividades;
+import static br.escola.model.TurmaMenu.listarTurmas;
 
 public class Main {
     // =========================================================================
@@ -17,7 +17,7 @@ public class Main {
     // A exibição dos menus foi separada para a classe MenuPrincipal,
     // deixando o Main responsável apenas por ler a opção e chamar o metodo certo.
 
-    public static void main(String[] args) throws Exception {
+    static void main() throws Exception {
 
         Scanner sc = new Scanner(System.in);
         int modulo = -1;
@@ -81,7 +81,7 @@ public class Main {
             PaginasMenu.exibirTurmas();
             opcao = sc.nextInt();
             switch (opcao) {
-                case 1 -> System.out.println("FUNÇÃO EM CONSTRUÇÃO");
+                case 1 -> listarTurmas();
                 case 2 -> System.out.println("FUNÇÃO EM CONSTRUÇÃO");
                 case 0 -> System.out.println("Voltando...");
                 default -> System.out.println("Opção inválida.");
@@ -124,7 +124,7 @@ public class Main {
             opcao = sc.nextInt();
             switch (opcao) {
                 case 1 -> GestaoMenu.transferirAluno(sc);
-                case 2 -> System.out.println("FUNÇÃO EM CONSTRUÇÃO");
+                case 2 -> GestaoMenu.fecharAnoLetivo();
                 case 3 -> System.out.println("FUNÇÃO EM CONSTRUÇÃO");
                 case 0 -> System.out.println("Voltando...");
                 default -> System.out.println("Opção inválida.");

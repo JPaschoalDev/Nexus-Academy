@@ -3,5 +3,7 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/br/escola/model/AlunoMenu.java" value="0b84d7d1-526d-4184-839c-2b91e5bf9c33" />
     <file url="file://$PROJECT_DIR$/src/main/java/br/escola/model/AtividadeMenu.java" value="0b84d7d1-526d-4184-839c-2b91e5bf9c33" />
+    <file url="file://$PROJECT_DIR$/src/main/java/br/escola/model/ProfessorMenu.java" value="0b84d7d1-526d-4184-839c-2b91e5bf9c33" />
+    <file url="file://$PROJECT_DIR$/src/main/java/br/escola/model/TurmaMenu.java" value="0b84d7d1-526d-4184-839c-2b91e5bf9c33" />
   </component>
 </project>
