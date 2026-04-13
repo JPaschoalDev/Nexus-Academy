@@ -8,8 +8,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class TurmaMenu {
-    public void listarTurmas() {
-        String sql = "SELECT turma, FROM escola.turma";
+    public static void listarTurmas() {
+        String sql = "SELECT * FROM escola.turma";
 
         try (Connection con = Conexao.obter();
              Statement st  = con.createStatement();
@@ -30,7 +30,4 @@ public class TurmaMenu {
         }
 
     }
-
-
-
 }
