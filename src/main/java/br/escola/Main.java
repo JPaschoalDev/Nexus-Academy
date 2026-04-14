@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import static br.escola.model.AtividadeMenu.listarAtividades;
 import static br.escola.model.TurmaMenu.listarTurmas;
+import static br.escola.model.TurmaMenu.verRelatorioTurma;
 
 public class Main {
     // =========================================================================
@@ -82,7 +83,7 @@ public class Main {
             opcao = sc.nextInt();
             switch (opcao) {
                 case 1 -> listarTurmas();
-                case 2 -> System.out.println("FUNÇÃO EM CONSTRUÇÃO");
+                case 2 -> verRelatorioTurma(sc);
                 case 0 -> System.out.println("Voltando...");
                 default -> System.out.println("Opção inválida.");
             }
